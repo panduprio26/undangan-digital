@@ -78,7 +78,8 @@ body {
 }
 
 .home {
-    background-image: url(img/bghome.jpeg);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8),
+    rgba(200, 200, 200, 0.5));
     background-size: cover;
     min-height: 120vh;
     margin-top: -6rem;
@@ -104,7 +105,7 @@ body {
 
 .home p {
     font-size: 1.1rem;
-    color: #666;
+    color: #333;
 }
 
 .home .couple {
@@ -142,7 +143,7 @@ body {
 }
 
 .info {
-    background-image: url(img/bghome.jpeg);
+    background-color: #ffcfe3;
     background-size: cover;
     min-height: 100vh;
     margin-top: -6rem;
@@ -597,6 +598,29 @@ footer li {
         width: 100%;
         
     }
+    #wedding img {
+        width: 100px !important;
+        height: auto !important;
+        border-radius: 50% !important;
+        margin: 20px;
+    }
+
+    #wedding {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+        margin-bottom: 30px;
+    
+    #wedding p {
+        margin: 30px;
+    }
+        
+    }
+
+    #wedding:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
 }
 
 @media (max-width: 375px) {
@@ -647,10 +671,26 @@ footer li {
         margin-left: 0 auto;
     }
 
-    .couple {
-        gap: 100px;
+    #wedding img {
+        width: 80px !important;
+        height: auto !important;
+        border-radius: 50% !important;
+        margin: 20px;
+        margin-top: -3px;
     }
-}
+
+    #wedding {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 10px !important;
+        /* margin-bottom: 30px; */
+    }
+    
+    /* #wedding p {
+        margin: 30px; */
+    }
+
 
 @media (min-width: 360px) and (max-width: 414px) {
     .couple {
