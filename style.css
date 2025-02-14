@@ -609,7 +609,7 @@ footer li {
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
-        gap: 20px !important;
+        gap: 5px !important;
         margin-bottom: 30px;
     
     #wedding p {
